@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+body {
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 231, 211);
+}
+
+.hero {
+    max-width: 800px;
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background: rgb(208, 208, 202);
+    border-radius: 100px;
+
+}
+
+.hero button {
+    width: 30%;
+    padding: 14px;
+    border: none;
+    margin-top: 9px;
+    font-size: 17px;
+    background: black;
+    border-radius: 100px;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: cursive;
+
+}
+
+
+
+.hero .button {
+    padding: 12px 0;
+
+}
+
+.button,
+li,
+i {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.button.row select {
+    color: grey;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 2px solid rgb(25, 24, 24);
+    background: none;
+
+}
+
+.button .change {
+    color: rgb(18, 17, 17);
+    font-size: 20px;
+    cursor: pointer;
+    transform: transform 0, 2s ease;
+    justify-items: center;
+}
+
+.button i:active {
+    transform: scale(0, 9);
+}
+
+.groupy {
+    border: 2px solid black;
+    background: rgb(246, 241, 241);
+}
+
+.groupy .text-input {
+    display: -moz-grid-line;
+}
+
+.text-input .to-text {
+    border-left: 2px solid black;
+}
+
+.text-input textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+button.clear {
+    width: 15%;
+    padding: 14px;
+    border: none;
+    margin-top: 9px;
+    font-size: 17px;
+    background: rgb(128 136 132);
+    border-radius: 100px;
+    color: rgb(17 18 18);
+    cursor: pointer;
+    font-family: cursive;
+}

@@ -1,0 +1,87 @@
+// étape 1*********************
+function sum1(tab) {
+    let sum = 0;
+    for (i = 0; i < tab.length; i++) {
+        sum += tab[i];
+    }
+    return sum;
+}
+console.log(sum1([1, 4, 7]));
+
+
+/** étape 2************************
+ * fonction récutrsive pour calculer les élments du tab
+ * @param tab tableau des entiers 
+ * @returns la somme des elements du tab
+ */
+function sum2(tab) {
+    if (tab.length == 0) {
+        return 0;
+    }
+    let element = tab.shift();
+    return element + sum2(tab);
+}
+
+console.log(sum2([]));
+console.log(sum2([1, 3, 6]));
+
+
+//étape 3 *********************************** factorial
+
+function fact(entier) {
+    if (entier - 1 == 0) {
+        return 1;
+    }
+
+    return entier * fact(entier - 1);
+}
+console.log(fact(3));
+
+
+
+// étape 4 *****************************fibonacci
+
+/*function fibonacci(x) {
+    if (x < 2) {
+        return x;
+    }
+    return fibonacci(x - 1) + fibonacci(x - 2);
+}
+console.log(fibonacci(3));
+console.log(fibonacci(6));
+console.log(fibonacci(8));
+*/
+
+// Renvoie les X premiers termes de la suite de Fibonacci - Donner un x au moins superieur a 2
+function fibonacci(x, y = [0, 1]) {
+    if (x === 2) return y
+    else
+        x = x - 1
+    let z = y[y.length - 1] + y[y.length - 2]
+    y.push(z)
+    return fibonacci(x, y)
+}
+
+console.log(fibonacci(10))
+
+
+
+
+
+/*
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+let tabPair = []
+let tabImpair = []
+
+for (let i = 0; i < array.length; i++) {
+
+    if (array[i] % 2 == 0) {
+        tabPair.push(array[i]);
+    } else {
+        tabImpair.push(array[i]);
+
+    }
+
+}
+console.log(tabPair);
+console.log(tabImpair);*/

@@ -1,0 +1,21 @@
+h1 {
+    font-size: 3em;
+    color: rgb(249, 245, 245);
+    text-align: center;
+    background-color: rgb(155, 2, 2);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: brown;
+    text-align: center;
+    background-color: bisque;
+}
+
+div {
+    font-size: 2em;
+    text-align: center;
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-top: 1.5em;
+}
